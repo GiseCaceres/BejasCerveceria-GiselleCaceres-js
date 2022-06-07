@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif; }
+
+/*      EXTEND PARA LOS TITULOS        */
+.titulos, #bienv #tituloIndex, #mainLocales #contenidoLocal #tituloLocales, #mainCervezas #contenido #tituloCervezas, #mainNosotros .nosotros #tituloNosotros, #tituloContactanos {
+  font-family: "Anton", sans-serif;
+  font-size: 6vw;
+  text-align: center; }
+
+/*      MIXIN PARA LAS GRILLAS         */
+/*     NAV     */
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5; }
+  header nav {
+    background-color: black;
+    height: 75px;
+    text-align: center; }
+    header nav .logo {
+      display: inline-block;
+      height: 9vh;
+      padding-left: 5%; }
+    header nav #navbarNav {
+      padding-left: 30%; }
+      header nav #navbarNav ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around; }
+        header nav #navbarNav ul li {
+          height: 100%; }
+          header nav #navbarNav ul li a {
+            color: #ffff;
+            text-decoration: none;
+            display: block;
+            padding-top: 29px;
+            height: 100%; }
+            header nav #navbarNav ul li a:hover {
+              background-color: gray;
+              color: black; }
+
+/*     INDEX     */
+#inicio {
+  position: relative;
+  height: 100%; }
+  #inicio img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; }
+  #inicio #titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    padding-top: 25%; }
+
+#bienv {
+  padding: 3%;
+  justify-content: center; }
+  #bienv #tituloIndex {
+    font-size: 4vw;
+    color: #231E25; }
+  #bienv main hr {
+    margin: 2% 0% 1%;
+    background-color: orange; }
+
+/*     SECCION LOCALES     */
+#mainLocales #contenidoLocal #fotoLocal {
+  position: unset;
+  width: 99%;
+  height: 70%; }
+
+#mainLocales #contenidoLocal #tituloLocales {
+  color: black;
+  font-size: 6vh;
+  padding-top: 3%; }
+
+#mainLocales #contenidoLocal #plocal {
+  padding: 10px; }
+
+#mainLocales aside {
+  background-color: #F2B705;
+  padding: 10px; }
+  #mainLocales aside #divLocales #titleAside {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  #mainLocales aside #divLocales #imgLocal {
+    position: unset;
+    width: 100%;
+    height: 20%; }
+
+/*     SECCION CERVEZAS     */
+#mainCervezas #contenido #tituloCervezas {
+  color: #F2B4AE;
+  padding-bottom: 5%;
+  padding-top: 5%; }
+
+#mainCervezas #grillaCervezas {
+  height: 100%;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin-bottom: 10%; }
+  #mainCervezas #grillaCervezas .fotoCerv {
+    position: unset;
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15); }
+  #mainCervezas #grillaCervezas .subtitulos {
+    color: #666059;
+    padding-top: 5%; }
+  form{
+    padding: 6%;
+  }
+  
+  #btn{
+    margin-left: 12%;
+    margin-top: 9%;
+  }
+
+  #cerv3{
+    margin-top: 10%;
+  }
+  #cerv4{
+    margin-top: 10%;
+  }
+  
+
+/*     SECCION NOSOTROS     */
+#mainNosotros .nosotros {
+  text-align: center; }
+  #mainNosotros .nosotros #tituloNosotros {
+    color: #666059;
+    padding-top: 5%;
+    padding-bottom: 3%; }
+
+#mainNosotros #grillaNosotros .imgNos #fotonos {
+  position: unset;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+#mainNosotros #grillaNosotros .info {
+  flex-direction: row;
+  align-items: stretch;
+  padding: 50px;
+  background-color: #ccc; }
+
+#mainNosotros #grillaNosotros #visitanos {
+  align-items: center;
+  padding: 50px; }
+
+#mainNosotros #grillaNosotros iframe {
+  height: 70%;
+  padding-top: 11%;
+  padding-left: 10%;
+  width: 90%; }
+
+/*     SECCION CONTACTANOS     */
+#tituloContactanos {
+  color: orange;
+  padding-top: 5%;
+  padding-bottom: 3%; }
+
+#mainContactanos {
+  position: relative; }
+  #mainContactanos .contenido {
+    position: relative;
+    height: 60vh; }
+  #mainContactanos .fotoCont {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    display: block; }
+  #mainContactanos #formulario #form {
+    background-color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+    padding: 19px;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column; }
+
+/*     FOOTER     */
+footer {
+  align-items: center;
+  background-color: #BF5517;
+  color: #fff; }
+  footer h3 {
+    display: inline-block;
+    text-align: center; }
+  footer .horarios {
+    display: inline-block;
+    text-align: center; }
+  footer .redes {
+    display: inline-block;
+    padding-left: 35%; }
+    footer .redes ul li {
+      display: inline-block; }
+      footer .redes ul li .iconos {
+        width: 35px;
+        height: auto;
+        margin: 10px; }
+        footer .redes ul li .iconos:hover {
+          filter: opacity(50%); }
+
+/*     Mobile     */
+@media only screen and (max-width: 499px) {
+  /*      NAV     */
+  /*     NAV GRILLA     */
+  header nav #navbarNav {
+    padding-left: 0%; }
+  /*     INDEX      */
+  /*     GRILLA INDEX     */
+  #grillaIndex #inicio #titulo {
+    font-size: 8vw;
+    padding-top: 55%; }
+  #grillaIndex #bienv #tituloIndex {
+    font-size: 5vw; }
+  /*     SECCION LOCALES     */
+  /*     GRILLA LOCALES     */
+  #titleAside {
+    text-align: center; }
+  #imgLocal {
+    width: 100%; }
+  /*     SECCION CERVEZAS     */
+  /*     GRILLA CERVEZAS     */
+  #mainCervezas {
+    padding: 4%; }
+    #mainCervezas #tituloCervezas {
+      font-size: 7vw; }
+    #mainCervezas #grillaCervezas {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10%; }
+      #mainCervezas #grillaCervezas #cerv2 {
+        padding-top: 10%; }
+      #mainCervezas #grillaCervezas #cerv3 {
+        padding-top: 10%; }
+      #mainCervezas #grillaCervezas #cerv4 {
+        padding-top: 10%; }
+  /*     SECCION NOSOTROS     */
+  /*     GRILLA NOSOTROS     */
+  #mainNosotros #grillaNosotros #tituloVis {
+    text-align: center; }
+  #mainNosotros #grillaNosotros #iframe iframe {
+    padding-top: 0%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    width: 100%; }
+  /*     SECCION CONTACTANOS     */
+  /*     GRILLA CONTACTANOS     */
+  #mainContactanos #tituloContactanos {
+    font-size: 7vw; }
+  #mainContactanos .fotoCont {
+    height: 100%; }
+  #mainContactanos #formulario {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding: 100px; }
+  /*     FOOTER     */
+  /*     GRILLA FOOTER     */
+  footer {
+    display: flex;
+    flex-direction: column; }
+    footer .redes {
+      padding-left: 0%; }
+      footer .redes ol, footer .redes ul {
+        padding-left: 0%;
+        margin-bottom: 0%; } }
+
+/*     Tablet     */
+@media only screen and (max-width: 991px) and (min-width: 500px) {
+  /*     SECCION CONTACTANOS     */
+  /*     GRILLA CONTACTANOS     */
+  #mainContactanos #formulario {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding: 100px; }
+  /*     FOOTER     */
+  /*     GRILLA FOOTER     */
+  footer {
+    display: flex;
+    flex-direction: column; }
+    footer .redes {
+      padding-left: 0%; }
+      footer .redes ol, footer .redes ul {
+        padding-left: 0%;
+        margin-bottom: 0%; } }
+
+/*     Desktop    */
+@media only screen and (min-width: 992px) {
+  /*     INDEX      */
+  /*     GRILLA INDEX     */
+  #grillaIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    height: 100vh; }
+  /*     SECCION LOCALES     */
+  /*     GRILLA LOCALES     */
+  #grillaLocales {
+    display: grid;
+    grid-template-columns: 77% 21%;
+    grid-template-rows: 100%;
+    grid-column-gap: 2%; }
+  /*     SECCION CERVEZAS     */
+  /*     GRILLA CERVEZAS     */
+  #grillaCervezas {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    row-gap: 7%; }
+  /*     SECCION NOSOTROS     */
+  /*     GRILLA NOSOTROS     */
+  #grillaNosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px; }
+  /*     SECCION CONTACTANOS     */
+  /*     GRILLA CONTACTANOS     */
+  #formulario {
+    padding: 150px; }
+  /*     FOOTER     */
+  /*     GRILLA FOOTER     */
+  footer {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    height: 150px; } }
+
+    #box{
+      border-radius: 100%;
+      background-color: transparent;
+      width: 40px;
+      height: 50% !important;
+      padding: 0%;
+      position: relative;
+    }
+    .eliminar{
+      border: none;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      background: none !important;
+    }      
+
+   .noMostrar{
+    visibility: collapse;
+   }
+
+   .mostrar{
+    visibility: visible !important;
+   }
